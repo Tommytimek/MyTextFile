@@ -1,0 +1,16 @@
+body {background-color: rgba(191, 191, 63, 0.13);}
+h1 {color: black;}
+h2 {color: #DCDCDC;}
+hr {color: #130f0f;}
+p {color: #080808;}
+.text {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgba(191, 191, 63, 0.13);
+    padding: 10px;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
