@@ -4,6 +4,8 @@ var time
 var page = 0
 var id = "1"
 var url = ""
+var pic_name = new Image()
+var pic = new Array()
 
 function k(x, y, z) {
     page = x
@@ -22,8 +24,13 @@ function xianshi() {
     else {
         i += 1;
     }
+    pic_name.src = url + i + ".jpg"
+    if (pic[i - 1] != pic_name.src) {
+        pic[i - 1] = pic_name.src
+    }
+
     const n = document.getElementById(id);
-    n.setAttribute("src", url + i + ".jpg");
+    n.setAttribute("src", pic[i - 1]);
     time = setTimeout(xianshi, 3000);
 }
 function left() {
