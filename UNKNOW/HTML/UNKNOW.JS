@@ -1,9 +1,11 @@
 
 var i = 0;
 var time
+
 var page = 0
 var id = "1"
 var url = ""
+
 var pic_name = new Image()
 var pic = new Array()
 
@@ -31,7 +33,7 @@ function xianshi() {
 
     const n = document.getElementById(id);
     n.setAttribute("src", pic[i - 1]);
-    time = setTimeout(xianshi, 3000);
+    time = setTimeout(xianshi, 5000);
 }
 function left() {
     clearTimeout(time);
