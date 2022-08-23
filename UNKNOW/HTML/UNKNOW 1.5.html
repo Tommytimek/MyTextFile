@@ -10,7 +10,12 @@
 
     <title>UNKNOW 1.5</title>
     <style>
+        div {
+            display: contents;
+        }
+
         img {
+            position: relative;
             display: block;
             height: 540px;
             width: auto;
@@ -18,73 +23,96 @@
         }
 
         .button {
-            display: block;
-            text-align: center;
+            display: flex;
         }
-        button{
-            background-color: hsla(0, 0%, 80%, 0.8);
-            width: 150px;
-            height: 30px;
+
+        button {
+            background-color: hsla(0, 0%, 80%, 0);
             border: none;
             border-radius: 0px;
+            position: relative;
+            width: 50%;
+            top: -300px;
         }
-        button:host{
-            background-color: hsla(0, 0%, 100%, 0.8);
-        }
-        button:active{
-            background-color: hsla(0, 0%, 50%, 0.8);
+
+        button:active {
+            background-color: hsla(0, 0%, 50%, 0.2);
         }
     </style>
 </head>
 
 <body>
     <h1>UNKNOW 1.5</h1>
-    <div>
+    <div id="pic-box">
         <img id="1" src="404\01.jpg" loading="lazy" alt="pic" />
         <div class="button">
-            <button onclick="left()">上一张</button>
-            <button onclick="k(8,'1', '404\\0')">开始/重置</button>
-            <button onclick="right()">下一张</button>
+            <button class="left" onclick="left()">
+                <img src="svg/left.svg" loading="lazy" alt="<" style="height: 50px;" />
+            </button>
+            <button onclick="k(8,'1', '404\\0')"></button>
+            <button onclick="right()">
+                <img src="svg/right.svg" loading="lazy" alt=">" style="height: 50px;" />
+            </button>
         </div>
     </div>
     <div>
         <img id="2" src="404\11.jpg" loading="lazy" alt="pic" />
         <div class="button">
-            <button onclick="left()">上一张</button>
-            <button onclick="k(2,'2', '404\\1')">开始/重置</button>
-            <button onclick="right()">下一张</button>
+            <button class="left" onclick="left()">
+                <img src="svg/left.svg" loading="lazy" alt="<" style="height: 50px;" />
+            </button>
+            <button onclick="k(2,'2', '404\\1')"></button>
+            <button onclick="right()">
+                <img src="svg/right.svg" loading="lazy" alt=">" style="height: 50px;" />
+            </button>
         </div>
     </div>
     <div>
         <img id="3" src="404\21.jpg" loading="lazy" alt="pic" />
         <div class="button">
-            <button onclick="left()">上一张</button>
-            <button onclick="k(8,'3', '404\\2')">开始/重置</button>
-            <button onclick="right()">下一张</button>
+            <button class="left" onclick="left()">
+                <img src="svg/left.svg" loading="lazy" alt="<" style="height: 50px;" />
+            </button>
+            <button onclick="k(8,'3', '404\\2')"></button>
+            <button onclick="right()">
+                <img src="svg/right.svg" loading="lazy" alt=">" style="height: 50px;" />
+            </button>
         </div>
     </div>
     <div>
         <img id="4" src="404\31.jpg" loading="lazy" alt="pic" />
         <div class="button">
-            <button onclick="left()">上一张</button>
-            <button onclick="k(12,'4', '404\\3')">开始/重置</button>
-            <button onclick="right()">下一张</button>
+            <button class="left" onclick="left()">
+                <img src="svg/left.svg" loading="lazy" alt="<" style="height: 50px;" />
+            </button>
+            <button onclick="k(12,'4', '404\\3')"></button>
+            <button onclick="right()">
+                <img src="svg/right.svg" loading="lazy" alt=">" style="height: 50px;" />
+            </button>
         </div>
     </div>
     <div>
         <img id="5" src="404\41.jpg" loading="lazy" alt="pic" />
         <div class="button">
-            <button onclick="left()">上一张</button>
-            <button onclick="k(3,'5', '404\\4')">开始/重置</button>
-            <button onclick="right()">下一张</button>
+            <button class="left" onclick="left()">
+                <img src="svg/left.svg" loading="lazy" alt="<" style="height: 50px;" />
+            </button>
+            <button onclick="k(3,'5', '404\\4')"></button>
+            <button onclick="right()">
+                <img src="svg/right.svg" loading="lazy" alt=">" style="height: 50px;" />
+            </button>
         </div>
     </div>
     <div>
         <img id="6" src="404\51.jpg" loading="lazy" alt="pic" />
         <div class="button">
-            <button onclick="left()">上一张</button>
-            <button onclick="k(14,'6', '404\\5')">开始/重置</button>
-            <button onclick="right()">下一张</button>
+            <button class="left" onclick="left()">
+                <img src="svg/left.svg" loading="lazy" alt="<" style="height: 50px;" />
+            </button>
+            <button onclick="k(14,'6', '404\\5')"></button>
+            <button onclick="right()">
+                <img src="svg/right.svg" loading="lazy" alt=">" style="height: 50px;" />
+            </button>
         </div>
     </div>
 
